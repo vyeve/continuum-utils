@@ -29,6 +29,4 @@ migrate:
 	@echo ===== Make migrations
 	@cat ./Cassandra/cql/schema.cql | cqlsh --cqlversion 3.4.4
 	@$(MIGRATE) -verbose -database $(DB_URL) -path $(MIGRATIONS_DIR) up
-	@echo ===== Wait until Elasticsearch runs
-	@until curl -sSf -XGET --insecure --user elastic:changeme 'http://localhost:9200/_cluster/health?wait_for_status=yellow' > /dev/null); do sleep 5 ; done
 	@echo ===== Done
