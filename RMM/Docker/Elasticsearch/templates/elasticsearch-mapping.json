@@ -1,0 +1,117 @@
+{
+    "template": "managed_endpoint*",
+    "settings": {
+        "max_result_window": 30000,
+        "analysis": {
+            "normalizer": {
+                "lowerasciinormalizer": {
+                    "type": "custom",
+                    "filter": [
+                        "lowercase",
+                        "asciifolding"
+                    ]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "managed_endpoints": {
+            "properties": {
+                "id": {
+                    "type": "text"
+                },
+                "os": {
+                    "type": "keyword"
+                },
+                "service_pack": {
+                    "type": "keyword"
+                },
+                "os_service_pack": {
+                    "type": "keyword"
+                },
+                "version": {
+                    "type": "keyword"
+                },
+                "baseboard_manufacturer": {
+                    "type": "text"
+                },
+                "virtual_machine": {
+                    "type": "boolean"
+                },
+                "installed_software": {
+                    "type": "object",
+                    "properties": {
+                        "version": {
+                            "type": "keyword"
+                        },
+                        "name": {
+                            "type": "keyword"
+                        },
+                        "name_version": {
+                            "type": "keyword"
+                        },
+                        "installation_date": {
+                            "type": "date"
+                        }
+                    }
+                },
+                "processor_type": {
+                    "type": "keyword"
+                },
+                "endpoint_type": {
+                    "type": "keyword"
+                },
+                "available_disk_space": {
+                    "type": "long"
+                },
+                "cpu": {
+                    "type": "long"
+                },
+                "ram": {
+                    "type": "long"
+                },
+                "machine_name": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "machine_friendly_name": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "client": {
+                    "type": "keyword"
+                },
+                "partner": {
+                    "type": "keyword"
+                },
+                "site": {
+                    "type": "keyword"
+                },
+                "missing_patches": {
+                    "type": "boolean"
+                },
+                "list_of_missing_patches": {
+                    "type": "text"
+                },
+                "last_patch_update": {
+                    "type": "date"
+                },
+                "v_pro": {
+                    "type": "boolean"
+                },
+                "wake_on_lan": {
+                    "type": "boolean"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "ipv4_list_internal": {
+                    "type": "ip"
+                },
+                "ipv4_list_external": {
+                    "type": "ip"
+                }
+            }
+        }
+    }
+}

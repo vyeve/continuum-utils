@@ -1,0 +1,30 @@
+{
+    "template": "os_tree*",
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3, 
+            "number_of_replicas" : 2
+        }
+    },
+    "mappings": {
+        "os_tree": {
+            "properties": {
+                "id": {
+                    "type": "keyword"
+                },
+                "os": {
+                    "type": "keyword"
+                },
+                "os_search": {
+                    "type": "keyword"
+                },
+                "partner": {
+                    "type": "keyword"
+                }
+            }
+        }
+    }
+}
+
+
+
