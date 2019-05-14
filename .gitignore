@@ -1,3 +1,8 @@
 # Local specifics
 .idea/
 .vscode/
+
+# Automatically generated
+vendor/
+*.lock
+*.toml
