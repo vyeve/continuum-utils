@@ -6,3 +6,4 @@
 vendor/
 *.lock
 *.toml
+*.log
