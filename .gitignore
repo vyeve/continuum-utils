@@ -7,3 +7,4 @@ vendor/
 *.lock
 *.toml
 *.log
+*.log.gz
