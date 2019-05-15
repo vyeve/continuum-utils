@@ -1,7 +1,7 @@
 CREATE KEYSPACE IF NOT EXISTS dynamic_groups_space
 WITH REPLICATION = {
-'class': 'SimpleStrategy',
-'replication_factor': '1'}
+	'class': 'SimpleStrategy',
+	'replication_factor': '1'}
 AND DURABLE_WRITES = true;
 
 USE dynamic_groups_space;
