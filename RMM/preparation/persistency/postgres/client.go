@@ -2,37 +2,20 @@ package postgres
 
 import (
 	"database/sql"
+	"encoding/json"
+	"fmt"
 
-	_ "github.com/lib/pq"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/models"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
 
-/*
-CREATE TABLE IF NOT EXISTS collection (
-  createTimeUTC timestamp,
-  agentInstalledUTC timestamp,
-  createdBy text,
-  endpointID serial NOT NULL UNIQUE,
-  name text,
-  type text,
-  partnerID text,
-  clientID text,
-  siteID text,
-  friendlyName text,
-  remoteAddress text,
-  resourceType text,
-  endpointType text,
-  PRIMARY KEY (endpointID)
-);
-*/
 const (
-	insertIntoCollection = `insert into collection (createTimeUTC, agentInstalledUTC, createdBy, endpointID, name, type, partnerID, clientID,
-		siteID, friendlyName, remoteAddress, resourceType, endpointType) values ($1, $2, $3, 44, $5, $6, $7, $8, $9, $10, $11, $12, $13)`
+	insertIntoCollection = `insert into asset (endpointID, partnerID, rawAsset) 
+	values ($1, $2, $3)`
 )
 
 func newDBClient() (writer.Writer, error) {
-	connStr := "user=postgres dbname=endpoints sslmode=disable"
+	connStr := "user=postgres dbname=dg sslmode=disable password=1488"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		return nil, err
@@ -41,11 +24,24 @@ func newDBClient() (writer.Writer, error) {
 }
 
 func (c client) WriteAll(assets []models.AssetCollection) (err error) {
-	return
+	for _, asset := range assets {
+		errOne := c.Write(asset)
+		if errOne != nil {
+			if err == nil {
+				err = errOne
+			} else {
+				err = fmt.Errorf("%s; %s", err, errOne)
+			}
+		}
+	}
+	return err
 }
 
-func (c client) Write(a models.AssetCollection) (err error) {
-	_, err = c.pg.Exec(insertIntoCollection, a.CreateTimeUTC, a.AgentInstalledUTC, a.CreatedBy, a.EndpointID, a.Name, a.Type,
-		a.PartnerID, a.ClientID, a.SiteID, a.FriendlyName, a.RemoteAddress, a.ResourceType, a.EndpointType)
+func (c client) Write(asset models.AssetCollection) (err error) {
+	p, err := json.Marshal(&asset)
+	if err != nil {
+		return err
+	}
+	_, err = c.pg.Exec(insertIntoCollection, asset.EndpointID, asset.PartnerID, string(p))
 	return err
 }

@@ -42,7 +42,6 @@ func (w writer) Write(asset models.AssetCollection) (err error) {
 	if err != nil {
 		return err
 	}
-	p = append(p, '\n')
 	_, err = w.w.Write(p)
 	if err != nil {
 		return err
