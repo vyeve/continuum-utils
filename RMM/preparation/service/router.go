@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -8,6 +9,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 )
+
+const port = 8841
 
 func NewServer() *http.Server {
 	middlewareManager := negroni.New()
@@ -23,8 +26,9 @@ func NewServer() *http.Server {
 	middlewareManager.Use(negroniLogger)
 	middlewareManager.UseHandler(router)
 
+	fmt.Printf("Microservice starts listening on port: %d\n", port)
 	return &http.Server{
-		Addr:    ":8841",
+		Addr:    fmt.Sprintf(":%d", port),
 		Handler: middlewareManager,
 	}
 
