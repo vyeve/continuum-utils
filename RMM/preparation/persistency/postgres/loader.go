@@ -3,16 +3,23 @@ package postgres
 import (
 	"database/sql"
 
-	_ "github.com/lib/pq"
+	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/models"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
 
-var Client writer.Writer
+// Client to work with Postgresql
+var Client DataBase
 
+// DataBase defines methods to work with postgreSQL
+type DataBase interface {
+	writer.Writer
+	GetAsset(partnerID, endpointID string) (asset *models.AssetCollection, err error)
+}
 type client struct {
 	pg *sql.DB
 }
 
+// Load initializes Client
 func Load() error {
 	c, err := newDBClient()
 	if err != nil {

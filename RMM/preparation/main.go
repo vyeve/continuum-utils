@@ -17,6 +17,7 @@ import (
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/models"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/persistency/postgres"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/rest"
+	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/service"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
 
@@ -112,7 +113,7 @@ func readFile(fileName string) (assets []models.AssetCollection, err error) {
 	return assets, nil
 }
 
-func main() {
+func main5() {
 
 	connStr := "user=postgres dbname=dg sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
@@ -147,4 +148,15 @@ type AssetRaw struct {
 	EndpointID string `json:"endpointID"`
 	PartnerID  string `json:"partnerID"`
 	RawAsset   string `json:"rawAsset"`
+}
+
+func main() {
+	err := appLoader.Load(env)
+	if err != nil {
+		log.Fatal(err)
+	}
+	srv := service.NewServer()
+	if err = srv.ListenAndServe(); err != nil {
+		log.Fatal(err)
+	}
 }

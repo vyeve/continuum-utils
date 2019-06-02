@@ -3,18 +3,29 @@ package postgres
 import (
 	"database/sql"
 	"encoding/json"
+	"errors"
 	"fmt"
 
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/models"
-	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
+
+// ErrNotFound error if cannot find asset by partnerID and endpointID
+var ErrNotFound = errors.New("asset not found")
 
 const (
-	insertIntoCollection = `insert into asset (endpointID, partnerID, rawAsset) 
-	values ($1, $2, $3)`
+	insertIntoCollection = `
+	INSERT INTO asset (endpointID, partnerID, rawAsset) 
+	VALUES ($1, $2, $3)
+		ON CONFLICT (endpointID) DO UPDATE 
+  		SET	partnerID = EXCLUDED.partnerID,
+     		rawAsset = EXCLUDED.rawAsset;`
+	selectAsset = `
+	SELECT rawAsset 
+	FROM asset
+	WHERE endpointID=$1 AND partnerID=$2;`
 )
 
-func newDBClient() (writer.Writer, error) {
+func newDBClient() (DataBase, error) {
 	connStr := "user=postgres dbname=dg sslmode=disable password=1488"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
@@ -44,4 +55,19 @@ func (c client) Write(asset models.AssetCollection) (err error) {
 	}
 	_, err = c.pg.Exec(insertIntoCollection, asset.EndpointID, asset.PartnerID, string(p))
 	return err
+}
+
+func (c client) GetAsset(partnerID, endpointID string) (asset *models.AssetCollection, err error) {
+	var rawAsset string
+	row := c.pg.QueryRow(selectAsset, endpointID, partnerID)
+	err = row.Scan(&rawAsset)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return nil, ErrNotFound
+		}
+		return nil, err
+	}
+	asset = new(models.AssetCollection)
+	err = json.Unmarshal([]byte(rawAsset), asset)
+	return
 }
