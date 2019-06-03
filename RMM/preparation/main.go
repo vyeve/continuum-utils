@@ -23,6 +23,54 @@ import (
 
 var env = rest.DTEnvironment
 
+func prepareDB(conf models.Configuration) (err error) {
+	if !conf.SetUpDB {
+		return
+	}
+
+	var (
+		ids, partners []string
+		endpoints     []models.AssetCollection
+	)
+	ids, err = generation.Client.GetProducts()
+	if err != nil {
+		return err
+	}
+	fmt.Println("Length Products:", len(ids))
+	partners, err = generation.Client.GetPartnerIDs(ids)
+	if err != nil {
+		return err
+	}
+	fmt.Println("Length Partners:", len(partners))
+	endpoints, err = generation.Client.GetEndpoints(partners)
+	if err != nil {
+		return err
+	}
+	fmt.Println("Length Endpoints:", len(endpoints))
+	return postgres.Client.WriteAll(endpoints)
+}
+
+func mainZ() {
+	config := models.Configuration{
+		SetUpDB:     true,
+		Port:        8841,
+		Environment: rest.QAEnvironment,
+	}
+	// Load clients
+	err := appLoader.Load(config.Environment)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = prepareDB(config)
+	if err != nil {
+		log.Fatal(err)
+	}
+	srv := service.New(config.Port)
+	if err = srv.ListenAndServe(); err != nil {
+		log.Fatal(err)
+	}
+}
+
 func main2() {
 
 	fmt.Println(env.String())
@@ -63,7 +111,7 @@ const (
 	qaFile = "./endpointsQA.txt"
 )
 
-func main3() {
+func main() {
 	fmt.Println("Lets go...")
 	err := appLoader.Load(env)
 	if err != nil {
@@ -74,10 +122,24 @@ func main3() {
 		log.Fatal(err)
 	}
 	fmt.Println("Assets:", len(assets))
-	err = postgres.Client.WriteAll(assets)
-	if err != nil {
-		log.Fatal(err)
+	for _, as := range assets {
+		// if as.BaseBoard.HardwareUUID != "" {
+		// 	fmt.Printf("Endpoint: %s; BB:%+v\n", as.EndpointID, as.BaseBoard)
+		// }
+		if len(as.Firewall) != 0 {
+			fmt.Printf("Endpoint: %s\n", as.EndpointID)
+		}
+		// for _, m := range as.Networks {
+		// 	if m.IPv4IntfCname != "" {
+		// 		fmt.Printf("Endpoint: %s\n", as.EndpointID)
+		// 		break
+		// 	}
+		// }
 	}
+	// err = postgres.Client.WriteAll(assets)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 }
 
 func readFile(fileName string) (assets []models.AssetCollection, err error) {
@@ -148,15 +210,4 @@ type AssetRaw struct {
 	EndpointID string `json:"endpointID"`
 	PartnerID  string `json:"partnerID"`
 	RawAsset   string `json:"rawAsset"`
-}
-
-func main() {
-	err := appLoader.Load(env)
-	if err != nil {
-		log.Fatal(err)
-	}
-	srv := service.NewServer()
-	if err = srv.ListenAndServe(); err != nil {
-		log.Fatal(err)
-	}
 }

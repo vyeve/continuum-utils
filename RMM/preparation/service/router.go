@@ -10,9 +10,8 @@ import (
 	"github.com/urfave/negroni"
 )
 
-const port = 8841
-
-func NewServer() *http.Server {
+// New returns new HTTP server
+func New(port int) *http.Server {
 	middlewareManager := negroni.New()
 	middlewareManager.Use(negroni.NewRecovery())
 	negroniLogger := negroni.NewLogger()

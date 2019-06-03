@@ -1,0 +1,415 @@
+{
+    "template": "managed_endpoint*",
+    "settings": {
+        "max_result_window": 30000,
+        "analysis": {
+            "normalizer": {
+                "lowerasciinormalizer": {
+                    "type": "custom",
+                    "filter": [
+                        "lowercase",
+                        "asciifolding"
+                    ]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "managed_endpoints": {
+            "properties": {
+                "id": {
+                    "type": "text"
+                },
+                "os": {
+                    "type": "keyword"
+                },
+                "service_pack": {
+                    "type": "keyword"
+                },
+                "os_service_pack": {
+                    "type": "keyword"
+                },
+                "version": {
+                    "type": "keyword"
+                },
+                "baseboard_manufacturer": {
+                    "type": "text"
+                },
+                "virtual_machine": {
+                    "type": "boolean"
+                },
+                "installed_software": {
+                    "type": "object",
+                    "properties": {
+                        "version": {
+                            "type": "keyword"
+                        },
+                        "name": {
+                            "type": "keyword"
+                        },
+                        "name_version": {
+                            "type": "keyword"
+                        },
+                        "installation_date": {
+                            "type": "date"
+                        }
+                    }
+                },
+                "processor_type": {
+                    "type": "keyword"
+                },
+                "endpoint_type": {
+                    "type": "keyword"
+                },
+                "available_disk_space": {
+                    "type": "long"
+                },
+                "cpu": {
+                    "type": "long"
+                },
+                "ram": {
+                    "type": "long"
+                },
+                "machine_name": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "machine_friendly_name": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "client": {
+                    "type": "keyword"
+                },
+                "partner": {
+                    "type": "keyword"
+                },
+                "site": {
+                    "type": "keyword"
+                },
+                "missing_patches": {
+                    "type": "boolean"
+                },
+                "list_of_missing_patches": {
+                    "type": "text"
+                },
+                "last_patch_update": {
+                    "type": "date"
+                },
+                "v_pro": {
+                    "type": "boolean"
+                },
+                "wake_on_lan": {
+                    "type": "boolean"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "ipv4_list_internal": {
+                    "type": "ip"
+                },
+                "ipv4_list_external": {
+                    "type": "ip"
+                },
+                "create_time_utc": {
+                    "type": "date"
+                },
+                "agent_installed_utc": {
+                    "type": "date"
+                },
+                "created_by": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "type": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "reg_id": {
+                    "type": "keyword"
+                },
+                "remote_address": {
+                    "type": "ip"
+                },
+                "resource_type": {
+                    "type": "keyword",
+                    "normalizer": "lowerasciinormalizer"
+                },
+                "asset_baseboard": {
+                    "type": "object",
+                    "properties": {
+                        "product": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "manufacturer": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "model": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "serial_number": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "version": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "name": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "install_date": {
+                            "type": "date"
+                        }
+                    }
+                },
+                "asset_bios": {
+                    "type": "object",
+                    "properties": {
+                        "product": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "manufacturer": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "version": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "serial_number": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "smbios_version": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        }
+                    }
+                },
+                "asset_drives": {
+                    "type": "object",
+                    "properties": {
+                        "product": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "manufacturer": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "media_type": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "interface_type": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "logical_name": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "serial_number": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "partitions": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "size_bytes": {
+                            "type": "long"
+                        },
+                        "number_of_partitions": {
+                            "type": "integer"
+                        },
+                        "partition_data": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "label": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "file_system": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "description": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "size_bytes": {
+                                    "type": "long"
+                                }
+                            }
+                        }
+                    }
+                },
+                "asset_memory": {
+                    "type": "object",
+                    "properties": {
+                        "manufacturer": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "serial_number": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "size_bytes": {
+                            "type": "long"
+                        }
+                    }
+                },
+                "asset_networks": {
+                    "type": "object",
+                    "properties": {
+                        "vendor": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "product": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "dhcp_enabled": {
+                            "type": "boolean"
+                        },
+                        "dhcp_server": {
+                            "type": "ip"
+                        },
+                        "dhcp_lease_obtained": {
+                            "type": "date"
+                        },
+                        "dhcp_lease_expires": {
+                            "type": "date"
+                        },
+                        "dns_servers": {
+                            "type": "ip"
+                        },
+                        "ip_enabled": {
+                            "type": "boolean"
+                        },
+                        "ipv4": {
+                            "type": "ip"
+                        },
+                        "ipv4_list": {
+                            "type": "ip"
+                        },
+                        "ipv6": {
+                            "type": "ip"
+                        },
+                        "ipv6_list": {
+                            "type": "ip"
+                        },
+                        "subnet_mask": {
+                            "type": "ip"
+                        },
+                        "subnet_masks": {
+                            "type": "ip"
+                        },
+                        "default_ip_gateway": {
+                            "type": "ip"
+                        },
+                        "default_ip_gateways": {
+                            "type": "ip"
+                        },
+                        "mac_address": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "wins_primary_server": {
+                            "type": "ip"
+                        },
+                        "wins_secondary_server": {
+                            "type": "ip"
+                        },
+                        "logical_name": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "interface_index": {
+                            "type": "integer"
+                        },
+                        "speed": {
+                            "type": "long"
+                        }
+                    }
+                },
+                "asset_os": {
+                    "type": "object",
+                    "properties": {
+                        "product": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "manufacturer": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "media_type": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "interface_type": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "logical_name": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "serial_number": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "partitions": {
+                            "type": "keyword",
+                            "normalizer": "lowerasciinormalizer"
+                        },
+                        "size_bytes": {
+                            "type": "long"
+                        },
+                        "number_of_partitions": {
+                            "type": "integer"
+                        },
+                        "partition_data": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "label": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "file_system": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "description": {
+                                    "type": "keyword",
+                                    "normalizer": "lowerasciinormalizer"
+                                },
+                                "size_bytes": {
+                                    "type": "long"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

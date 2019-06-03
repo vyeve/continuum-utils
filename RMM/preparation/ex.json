@@ -1,0 +1,4481 @@
+{
+    "createTimeUTC": "2019-05-30T11:41:11.243Z",
+    "agentInstalledUTC": "2019-05-23T06:31:27.4Z",
+    "createdBy": "/agent/plugin/asset",
+    "name": "asset",
+    "type": "assetCollection",
+    "endpointID": "3e38ba01-b420-40a2-bd15-b3db89cb1fcb",
+    "partnerID": "50000053",
+    "clientID": "50110122",
+    "siteID": "50110122",
+    "regID": "53759465",
+    "friendlyName": "3e38ba01-b420-40a2-bd15-b3db89cb1fcb",
+    "remoteAddress": "125.22.49.114",
+    "resourceType": "Desktop",
+    "endpointType": "SBMAppliance",
+    "baseBoard": {
+        "product": "0GWHMW",
+        "manufacturer": "Dell Inc.",
+        "serialNumber": "/GQC8H92/CN722005BJ00QI/",
+        "version": "A02",
+        "name": "Base Board",
+        "installDate": "0001-01-01T00:00:00Z"
+    },
+    "bios": {
+        "manufacturer": "Dell Inc.",
+        "version": "A10",
+        "serialNumber": "GQC8H92",
+        "smbiosVersion": "2.8"
+    },
+    "drives": [
+        {
+            "product": "MR9361-8i",
+            "manufacturer": "LSI",
+            "mediaType": "HDD",
+            "interfaceType": "SCSI",
+            "logicalName": "sda",
+            "serialNumber": "600605b00d662760224236d410055fc9",
+            "partitions": [
+                "sda1",
+                "sda10",
+                "sda2",
+                "sda3",
+                "sda4",
+                "sda5",
+                "sda6",
+                "sda7",
+                "sda8",
+                "sda9"
+            ],
+            "sizeBytes": 8000450330624,
+            "numberOfPartitions": 10,
+            "partitionData": [
+                {
+                    "name": "sda1",
+                    "description": "BIOS Boot partition",
+                    "sizeBytes": 31457280
+                },
+                {
+                    "name": "sda10",
+                    "label": "/storage",
+                    "fileSystem": "xfs",
+                    "description": "EFI partition",
+                    "sizeBytes": 7862531129344
+                },
+                {
+                    "name": "sda2",
+                    "label": "/boot/efi",
+                    "fileSystem": "vfat",
+                    "description": "Windows FAT volume",
+                    "sizeBytes": 537919488
+                },
+                {
+                    "name": "sda3",
+                    "label": "/boot",
+                    "fileSystem": "ext4",
+                    "description": "EXT4 volume",
+                    "sizeBytes": 249561088
+                },
+                {
+                    "name": "sda4",
+                    "label": "/",
+                    "fileSystem": "xfs",
+                    "description": "EFI partition",
+                    "sizeBytes": 10000269312
+                },
+                {
+                    "name": "sda5",
+                    "label": "/var",
+                    "fileSystem": "xfs",
+                    "description": "EFI partition",
+                    "sizeBytes": 19999490048
+                },
+                {
+                    "name": "sda6",
+                    "label": "/opt",
+                    "fileSystem": "xfs",
+                    "description": "EFI partition",
+                    "sizeBytes": 29999759360
+                },
+                {
+                    "name": "sda7",
+                    "label": "/usr",
+                    "fileSystem": "xfs",
+                    "description": "EFI partition",
+                    "sizeBytes": 29999759360
+                },
+                {
+                    "name": "sda8",
+                    "label": "/tmp",
+                    "fileSystem": "xfs",
+                    "description": "EFI partition",
+                    "sizeBytes": 29999759360
+                },
+                {
+                    "name": "sda9",
+                    "description": "Linux swap volume",
+                    "sizeBytes": 17099128832
+                }
+            ]
+        }
+    ],
+    "physicalMemory": [
+        {
+            "manufacturer": "DIMM1_CPU2_Manufacturer1",
+            "serialNumber": "DIMM1_CPU2_SerNum",
+            "sizeBytes": 0
+        },
+        {
+            "manufacturer": "DIMM2_CPU2_Manufacturer1",
+            "serialNumber": "DIMM2_CPU2_SerNum",
+            "sizeBytes": 0
+        },
+        {
+            "manufacturer": "DIMM3_CPU2_Manufacturer1",
+            "serialNumber": "DIMM3_CPU2_SerNum",
+            "sizeBytes": 0
+        },
+        {
+            "manufacturer": "DIMM4_CPU2_Manufacturer1",
+            "serialNumber": "DIMM4_CPU2_SerNum",
+            "sizeBytes": 0
+        },
+        {
+            "manufacturer": "Samsung",
+            "serialNumber": "416A8FE4",
+            "sizeBytes": 4294967296
+        },
+        {
+            "manufacturer": "Samsung",
+            "serialNumber": "416A92C9",
+            "sizeBytes": 4294967296
+        },
+        {
+            "manufacturer": "Samsung",
+            "serialNumber": "416A92F9",
+            "sizeBytes": 4294967296
+        },
+        {
+            "manufacturer": "Samsung",
+            "serialNumber": "416A932B",
+            "sizeBytes": 4294967296
+        }
+    ],
+    "networks": [
+        {
+            "vendor": "Intel Corporation",
+            "product": "Ethernet Connection I217-LM",
+            "dhcpEnabled": true,
+            "dhcpServer": "10.2.40.16",
+            "dhcpLeaseObtained": "2019-05-30T12:23:35Z",
+            "dhcpLeaseExpires": "2019-06-04T04:56:41Z",
+            "dnsServers": [
+                "10.2.40.16"
+            ],
+            "ipEnabled": true,
+            "ipv4": "10.2.43.156",
+            "ipv4List": [
+                "10.2.43.156"
+            ],
+            "ipv6": "::",
+            "subnetMask": "255.255.248.0",
+            "subnetMasks": [
+                "255.255.248.0"
+            ],
+            "defaultIPGateway": "10.2.40.1",
+            "defaultIPGateways": [
+                "10.2.40.1"
+            ],
+            "macAddress": "64:00:6a:83:52:84",
+            "winsPrimaryServer": "0.0.0.0",
+            "winsSecondaryServer": "0.0.0.0",
+            "logicalName": "eth0",
+            "interfaceIndex": 2,
+            "speed": 1000
+        }
+    ],
+    "os": {
+        "product": "Ubuntu 14.04.5 LTS",
+        "manufacturer": "ubuntu",
+        "osLanguage": "en_US",
+        "version": "14.04",
+        "installDate": "0001-01-01T00:00:00Z",
+        "type": "linux",
+        "arch": "amd64",
+        "servicePack": "",
+        "osInstalledDrive": "",
+        "buildNumber": "14.04.5"
+    },
+    "processors": [
+        {
+            "product": "Intel(R) Xeon(R) CPU E5-2603 v3 @ 1.60GHz",
+            "numberOfProcessors": 0,
+            "numberOfCores": 1,
+            "clockSpeedMhz": 1600,
+            "family": 6,
+            "manufacturer": "GenuineIntel",
+            "processorType": "Central Processor",
+            "serialNumber": "0",
+            "level": 0
+        }
+    ],
+    "raidController": {},
+    "system": {
+        "product": "Dell Inc.",
+        "model": "Precision Tower 7810",
+        "timeZone": "-0600",
+        "timeZoneDescription": "CST",
+        "serialNumber": "GQC8H92",
+        "systemName": "3e38ba01-b420-40a2-bd15-b3db89cb1fcb",
+        "domainRole": 0
+    },
+    "installedSoftwares": [
+        {
+            "name": "accountsservice",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.6.35-0ubuntu7.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "adduser",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.113+nmu3ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "apparmor",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.8.95~2430-0ubuntu5.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "apt",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1ubuntu2.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "apt-show-versions",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.22.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "apt-transport-https",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1ubuntu2.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "apt-utils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1ubuntu2.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "aptitude",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.6.8.2-1ubuntu4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "aptitude-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.6.8.2-1ubuntu4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "base-files",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "7.2ubuntu5.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "base-passwd",
+            "publisher": "Colin Watson \u003ccjwatson@debian.org\u003e",
+            "version": "3.5.33",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "bash",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.3-7ubuntu1.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "bash-completion",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.1-4ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "bind9-host",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "binutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.24-5ubuntu14.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "biosdevname",
+            "publisher": "Colin Watson \u003ccjwatson@ubuntu.com\u003e",
+            "version": "0.4.1-0ubuntu6.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "bsdmainutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "9.0.5ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "bsdutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "busybox-initramfs",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.21.0-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "busybox-static",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.21.0-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "bzip2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.6-5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "c247cis",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "0.0.0-8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ca-certificates",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "20160104ubuntu0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ceni",
+            "publisher": "Stefan Lippers-Hollmann \u003cs.l-h@gmx.de\u003e",
+            "version": "2015.07.06",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "command-not-found",
+            "publisher": "Michael Vogt \u003cmichael.vogt@ubuntu.com\u003e",
+            "version": "0.3ubuntu12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "command-not-found-data",
+            "publisher": "Michael Vogt \u003cmichael.vogt@ubuntu.com\u003e",
+            "version": "0.3ubuntu12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "console-setup",
+            "publisher": "Ubuntu Installer Team \u003cubuntu-installer@lists.ubuntu.com\u003e",
+            "version": "1.70ubuntu8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "coreutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "8.21-1ubuntu5.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cpio",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.11+dfsg-1ubuntu1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cpp",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4:4.8.2-1ubuntu6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cpp-4.8",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cracklib-runtime",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.9.1-1build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "crda",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.1.2-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cron",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.0pl1-124ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cryptsetup",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.6.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "cryptsetup-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.6.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dash",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.5.7-4ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dbus",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6.18-0ubuntu4.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "debconf",
+            "publisher": "Colin Watson \u003ccjwatson@ubuntu.com\u003e",
+            "version": "1.5.51ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "debconf-i18n",
+            "publisher": "Colin Watson \u003ccjwatson@ubuntu.com\u003e",
+            "version": "1.5.51ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "debianutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dh-python",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.20140128-1ubuntu8.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "diffutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.3-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dkms",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2.0.3-1.1ubuntu5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dmidecode",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.12-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dmsetup",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.02.77-6ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dnsutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dosfstools",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.0.26-1ubuntu0.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dpkg",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.17.5ubuntu5.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "dr-tools",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "2.5.0-10",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "e2fslibs",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.42.9-3ubuntu1.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "e2fsprogs",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.42.9-3ubuntu1.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ed",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.9-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "efibootmgr",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.5.4-7ubuntu1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "eject",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.1.5+deb1+cvs20081104-13.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "fail2ban",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.8.11-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "file",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:5.14-2ubuntu3.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "findutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.4.2-7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "friendly-recovery",
+            "publisher": "Michael Vogt \u003cmichael.vogt@ubuntu.com\u003e",
+            "version": "0.2.25",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ftp",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.17-28",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "fuse",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.9.2-4ubuntu4.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gcc",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4:4.8.2-1ubuntu6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gcc-4.8",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gcc-4.8-base",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gcc-4.9-base",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.9.3-0ubuntu4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "geoip-database",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "20140313-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gettext-base",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.18.3.1-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gir1.2-glib-2.0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.40.0-1ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gnupg",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.4.16-1ubuntu2.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gpgv",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.4.16-1ubuntu2.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "grep",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.16-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "groff-base",
+            "publisher": "Colin Watson \u003ccjwatson@debian.org\u003e",
+            "version": "1.22.2-5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "grub-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.02~beta2-9ubuntu1.12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "grub-efi-amd64",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.02~beta2-9ubuntu1.12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "grub-efi-amd64-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.02~beta2-9ubuntu1.12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "grub-efi-amd64-signed",
+            "publisher": "Colin Watson \u003ccjwatson@ubuntu.com\u003e",
+            "version": "1.34.14+2.02~beta2-9ubuntu1.12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "grub2-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.02~beta2-9ubuntu1.12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "gzip",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6-3ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "hddtemp",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.3-beta15-52",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "hdparm",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "9.43-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "hostname",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.15ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ifupdown",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.7.47.2ubuntu4.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "info",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.2.0.dfsg.1-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "init-system-helpers",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "initramfs-tools",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "0.103ubuntu4.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "initramfs-tools-bin",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "0.103ubuntu4.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "initscripts",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.88dsf-41ubuntu6.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "insserv",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.14.0-5ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "install-info",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.2.0.dfsg.1-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "installation-report",
+            "publisher": "Ubuntu Installer Team \u003cubuntu-installer@lists.ubuntu.com\u003e",
+            "version": "2.54ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "iproute2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.12.0-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "iptables",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.4.21-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "iputils-ping",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3:20121221-4ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "iputils-tracepath",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3:20121221-4ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "irqbalance",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.6-2ubuntu0.14.04.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "isc-dhcp-client",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.2.4-7ubuntu12.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "isc-dhcp-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.2.4-7ubuntu12.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "iso-codes",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.52-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "its247agentsetup64",
+            "publisher": "Continuity247 Development \u003cdevelopment@r1soft.com\u003e",
+            "version": "2.0.0-104",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "its247smartsetup64",
+            "publisher": "Continuity247 Development \u003cdevelopment@r1soft.com\u003e",
+            "version": "2.0.0-104",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "itsplatform",
+            "publisher": "ITSPlatform",
+            "version": "1.0.762",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "kbd",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.15.5-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "keyboard-configuration",
+            "publisher": "Ubuntu Installer Team \u003cubuntu-installer@lists.ubuntu.com\u003e",
+            "version": "1.70ubuntu8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "klibc-utils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.0.3-0ubuntu1.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "kmod",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "15-0ubuntu6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "krb5-locales",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.12+dfsg-2ubuntu5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "language-selector-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.129.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "less",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "458-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libaccountsservice0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.6.35-0ubuntu7.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libacl1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2.52-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libapparmor-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.8.95~2430-0ubuntu5.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libapparmor1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.8.95~2430-0ubuntu5.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libapt-inst1.5",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1ubuntu2.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libapt-pkg-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.1.29build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libapt-pkg4.12",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1ubuntu2.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libarchive-extract-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.70-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libasan0",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libasn1-8-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libasound2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.27.2-3ubuntu7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libasound2-data",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.27.2-3ubuntu7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libasprintf0c2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.18.3.1-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libasyncns0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.8-4ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libatomic1",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libattr1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.4.47-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libaudit-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.3.2-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libaudit1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.3.2-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libauthen-pam-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.16-2build3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libbind9-90",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libblkid1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libboost-iostreams1.54.0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.54.0-4ubuntu3.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libbsd0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.6.0-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libbz2-1.0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.6-5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libc-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.19-0ubuntu6.9",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libc6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.19-0ubuntu6.9",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcaca0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.99.beta18-1ubuntu5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcap-ng0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.7.3-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcap2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.24-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcap2-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.24-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcgmanager0",
+            "publisher": "Serge Hallyn \u003cserge.hallyn@ubuntu.com\u003e",
+            "version": "0.24-0ubuntu7.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libck-connector0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.4.5-3.1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcloog-isl4",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.18.2-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcomerr2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.42.9-3ubuntu1.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcrack2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.9.1-1build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcryptsetup4",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.6.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcurl3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "7.35.0-1ubuntu2.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcurl3-gnutls",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "7.35.0-1ubuntu2.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcurses-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.28-1build3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcurses-ui-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.9609-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libcwidget3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.5.16-3.5ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdb5.3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.3.28-3ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdbus-1-3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6.18-0ubuntu4.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdbus-glib-1-2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.100.2-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdebconfclient0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.187ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdevmapper-event1.02.1",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.02.77-6ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdevmapper1.02.1",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.02.77-6ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdns100",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libdrm2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.4.67-1ubuntu0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libedit2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.1-20130712-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libefivar0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.21-1~14.04.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libelf1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.158-0ubuntu5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libept1.4.12",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libestr0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.1.9-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libexpat1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.1.0-4ubuntu1.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libexpect-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.21-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libffi6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.1~rc1+r3.0.13-12ubuntu0.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libflac8",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.0-2ubuntu0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libfreetype6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.5.2-1ubuntu2.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libfribidi0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.19.6-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libfuse2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.9.2-4ubuntu4.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgcc-4.8-dev",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgcc1",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.9.3-0ubuntu4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgck-1-0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.10.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgcr-3-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.10.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgcr-base-3-1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.10.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgcrypt11",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.5.3-2ubuntu4.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgdbm3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.8.3-12build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgeoip1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6.0-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgirepository-1.0-1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.40.0-1ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libglib2.0-0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.40.2-0ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libglib2.0-data",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.40.2-0ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgmp10",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:5.1.3+dfsg-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgnutls-openssl27",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.12.23-12ubuntu2.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgnutls26",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.12.23-12ubuntu2.5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgomp1",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgpg-error0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.12-0.2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgsoap4",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.8.16-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgssapi-krb5-2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.12+dfsg-2ubuntu5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libgssapi3-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libhcrypto4-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libheimbase1-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libheimntlm0-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libhx509-5-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libice6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.0.8-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libidn11",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.28-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libio-pty-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.08-1build4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libio-stty-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.03-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libisc95",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libisccc90",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libisccfg90",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libisl10",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.12.2-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libitm1",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libjpeg-turbo8",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.0-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libjpeg8",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "8c-2ubuntu8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libjson-c2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.11-3ubuntu1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libjson0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.11-3ubuntu1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libk5crypto3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.12+dfsg-2ubuntu5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libkeyutils1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.5.6-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libklibc",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.0.3-0ubuntu1.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libkmod2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "15-0ubuntu6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libkrb5-26-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libkrb5-3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.12+dfsg-2ubuntu5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libkrb5support0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.12+dfsg-2ubuntu5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libldap-2.4-2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.4.31-1+nmu2ubuntu8.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "liblocale-gettext-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.05-7build3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "liblockfile-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.09-6ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "liblockfile1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.09-6ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "liblog-message-simple-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.10-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "liblwres90",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:9.9.5.dfsg-3ubuntu0.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "liblzma5",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.1.1alpha+20120614-2ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libmagic1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:5.14-2ubuntu3.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libmodule-pluggable-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libmount1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libmpc3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libmpdec2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.4.0-6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libmpfr4",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.1.2-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libncurses5",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.9+20140118-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libncursesw5",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.9+20140118-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libneon27-gnutls",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.30.0-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnet-ssleay-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.58-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnewt0.52",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.52.15-2ubuntu5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnfnetlink0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnih-dbus1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.3-4ubuntu25",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnih1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.3-4ubuntu25",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnl-3-200",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.2.21-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnl-genl-3-200",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.2.21-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnspr4",
+            "publisher": "Ubuntu Mozilla Team \u003cubuntu-mozillateam@lists.ubuntu.com\u003e",
+            "version": "2:4.12-0ubuntu0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnss3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:3.23-0ubuntu0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnss3-nssdb",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:3.23-0ubuntu0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libnuma1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.0.9~rc5-1ubuntu3.14.04.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libogg0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libopts25",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:5.18-2ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libp11-kit0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.20.2-2ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam-cap",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2.24-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam-cracklib",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.1.8-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam-modules",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.1.8-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam-modules-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.1.8-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam-runtime",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.1.8-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam-systemd",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "204-5ubuntu20.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpam0g",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.1.8-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libparted0debian1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.3-19ubuntu1.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpcap0.8",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.5.3-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpci3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.2.1-1ubuntu5.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpcre3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:8.31-2ubuntu2.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpcsclite1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.8.10-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpipeline1",
+            "publisher": "Colin Watson \u003ccjwatson@debian.org\u003e",
+            "version": "1.3.0-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libplymouth2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.8.8-0ubuntu17.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpng12-0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.2.50-1ubuntu2.14.04.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpod-latex-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.61-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpolkit-gobject-1-0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.105-4ubuntu3.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpopt0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.16-8ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libprocps3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.3.9-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpulse0",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.0-0ubuntu11.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython-stdlib",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.5-5ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython2.7",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.6-8ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython2.7-minimal",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.6-8ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython2.7-stdlib",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.6-8ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython3-stdlib",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.0-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython3.4-minimal",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.3-1ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libpython3.4-stdlib",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.3-1ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libquadmath0",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libreadline5",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.2+dfsg-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libreadline6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "6.3-4ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libroken18-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "librtmp0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.4+20121230.gitdf6c518-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsasl2-2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.1.25.dfsg1-17build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsasl2-modules",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.1.25.dfsg1-17build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsasl2-modules-db",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.1.25.dfsg1-17build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsdl1.2debian",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.2.15-8ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libselinux1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2.2-1ubuntu0.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsemanage-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsemanage1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsensors4",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.3.4-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsepol1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2-1ubuntu0.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsigc++-2.0-0c2a",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2.10-0.2ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libslang2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2.4-15ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsm6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.2.1-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsndfile1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.25-7ubuntu2.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsqlite3-0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.8.2-1ubuntu2.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libss2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.42.9-3ubuntu1.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libssl1.0.0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1f-1ubuntu2.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libstdc++6",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsystemd-daemon0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "204-5ubuntu20.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libsystemd-login0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "204-5ubuntu20.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtasn1-6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4-3ubuntu0.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libterm-readkey-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.31-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libterm-ui-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.42-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtext-charwidth-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.04-7build3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtext-iconv-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.7-5build2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtext-soundex-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4-1build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtext-wrapi18n-perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.06-7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtinfo5",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.9+20140118-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libtsan0",
+            "publisher": "Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8.4-2ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libudev1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "204-5ubuntu20.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libupsclient3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libusb-0.1-4",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:0.1.12-23.3ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libusb-1.0-0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.0.17-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libustr-1.0-1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.4-3ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libuuid1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libvncserver0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.9.9+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libvorbis0a",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.2-1.3ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libvorbisenc2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.2-1.3ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libvpx1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.0-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libwind0-heimdal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.6~git20131207+dfsg-1ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libwrap0",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "7.6.q-25",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libx11-6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.6.2-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libx11-data",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.6.2-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxapian22",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.2.16-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxau6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.0.8-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxcb1",
+            "publisher": "Ubuntu X-SWAT \u003cubuntu-x@lists.ubuntu.com\u003e",
+            "version": "1.10-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxcursor1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.1.14-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxdmcp6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.1.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxext6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.3.2-1ubuntu0.0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxfixes3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:5.0.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxml2",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.9.1+dfsg1-3ubuntu4.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxmu6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.1.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxmuu1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:1.1.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxrender1",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:0.9.8-1build0.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxt6",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.1.4-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "libxtables10",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.4.21-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-firmware",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "1.127.22",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-headers-4.4.0-31",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0-31.50~14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-headers-4.4.0-31-generic",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0-31.50~14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-headers-generic-lts-xenial",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0.31.21",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-image-4.4.0-31-generic",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0-31.50~14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-image-extra-4.4.0-31-generic",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0-31.50~14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-signed-generic-lts-xenial",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0.31.21",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-signed-image-4.4.0-31-generic",
+            "publisher": "Canonical Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0-31.50~14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "linux-signed-image-generic-lts-xenial",
+            "publisher": "Ubuntu Kernel Team \u003ckernel-team@lists.ubuntu.com\u003e",
+            "version": "4.4.0.31.21",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lm-sensors",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.3.4-2ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "locales",
+            "publisher": "Martin Pitt \u003cmartin.pitt@ubuntu.com\u003e",
+            "version": "2.13+git20120306-12.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lockfile-progs",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.1.17",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "login",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.1.5.1-1ubuntu9.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "logrotate",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.8.7-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lsb-base",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.1+Debian11ubuntu6.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lsb-release",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.1+Debian11ubuntu6.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lshw",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "02.16-2ubuntu1.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lsof",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.86+dfsg-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ltrace",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.7.3-4ubuntu5.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "lvm2",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.02.98-6ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "make",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.81-8.2ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "makedev",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.3.1-93ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "man-db",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.6.7.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "manpages",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.54-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mawk",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.3.3-17ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mime-support",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.54ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mlocate",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.26-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "module-init-tools",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "15-0ubuntu6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mokutil",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.3.0-0ubuntu3~14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mount",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mountall",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.53",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "mtr-tiny",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.85-2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "multiarch-support",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.19-0ubuntu6.9",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "nano",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.2.6-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ncurses-base",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.9+20140118-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ncurses-bin",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.9+20140118-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "net-tools",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.60-25ubuntu2.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "netbase",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "netcat-openbsd",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.105-7ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ntfs-3g",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:2013.1.13AR.1-2ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ntp",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.2.6.p5+dfsg-3ubuntu2.14.04.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ntpdate",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.2.6.p5+dfsg-3ubuntu2.14.04.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "nut",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "nut-client",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "nut-server",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "nut-xml",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "open-iscsi",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.0.873-3ubuntu9",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "openssh-client",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:6.6p1-2ubuntu2.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "openssh-server",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:6.6p1-2ubuntu2.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "openssh-sftp-server",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:6.6p1-2ubuntu2.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "openssl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.0.1f-1ubuntu2.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "parted",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.3-19ubuntu1.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "passwd",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.1.5.1-1ubuntu9.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "patch",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.1-4ubuntu2.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "pciutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.2.1-1ubuntu5.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "perl",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.18.2-2ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "perl-base",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.18.2-2ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "perl-modules",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.18.2-2ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "plymouth",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.8.8-0ubuntu17.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "plymouth-theme-ubuntu-text",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.8.8-0ubuntu17.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "popularity-contest",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.57ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "powermgmt-base",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.31build1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ppp",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.4.5-5.1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "pppconfig",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.3.19ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "pppoeconf",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.20ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "procps",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:3.3.9-1ubuntu2.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "psmisc",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "22.20-1ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.5-5ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python-apt-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.9.3.5ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python-minimal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.5-5ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python2.7",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.6-8ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python2.7-minimal",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.7.6-8ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.0-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-apt",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.9.3.5ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-commandnotfound",
+            "publisher": "Michael Vogt \u003cmichael.vogt@ubuntu.com\u003e",
+            "version": "0.3ubuntu12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-dbus",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.2.0-2build2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-distupgrade",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:0.220.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-gdbm",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.3-1~14.04.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-gi",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.12.0-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-minimal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.0-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3-update-manager",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:0.196.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3.4",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.3-1ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "python3.4-minimal",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.4.3-1ubuntu1~14.04.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "r1ctl",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "2.5.0-10",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "r1scsi",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "0.0.1-31",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "r1scsifs",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "0.0.0-12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "r1soft-docstore",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "6.8.2-59",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "r1soft-getmodule",
+            "publisher": "r1soft-support \u003csupport@r1soft.com\u003e",
+            "version": "1.0.0-69",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "readline-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "6.3-4ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "resolvconf",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.69ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "rkhunter",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.4.0-3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "rsync",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.1.0-2ubuntu0.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "rsyslog",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "7.4.4-1ubuntu2.6",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sbsigntool",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.6-0ubuntu7.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "screen",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.1.0~20120320gitdb59704-9",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sed",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.2.2-4ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sensible-utils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.0.9",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "server-backup-agent-msi",
+            "publisher": "R1Soft Development \u003cDevelopment@r1soft.com\u003e",
+            "version": "6.8.2-58",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "serverbackup-agent-update-service",
+            "publisher": "R1Soft Development \u003cDevelopment@r1soft.com\u003e",
+            "version": "2.4.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "serverbackup-bootcd-agent-iso",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "2.4.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "serverbackup-enterprise",
+            "publisher": "idera-support \u003csupport@idera.com\u003e",
+            "version": "6.8.2-59",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "serverbackup-linux-agent-installers",
+            "publisher": "R1Soft Development \u003cDevelopment@r1soft.com\u003e",
+            "version": "6.8.2-58",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "serverbackup-manager",
+            "publisher": "r1soft-support \u003cinbound.support@r1soft.com\u003e",
+            "version": "6.8.2-59",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "serverbackup-setup",
+            "publisher": "r1soft-support \u003csupport@r1soft.com\u003e",
+            "version": "6.8.2-59",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sgml-base",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.26+nmu4ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "shared-mime-info",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.2-0ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sharutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:4.14-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "shim",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.8-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "shim-signed",
+            "publisher": "Steve Langasek \u003csteve.langasek@ubuntu.com\u003e",
+            "version": "1.18~14.04.1+0.8-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "site-sbm",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "2.4.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "smartmontools",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "6.2+svn3841-1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "strace",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.8-1ubuntu5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sudo",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.8.9p5-1ubuntu1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sysstat",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "10.2.0-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "systemd-services",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "204-5ubuntu20.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "systemd-shim",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "6-2bzr1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sysv-rc",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.88dsf-41ubuntu6.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "sysvinit-utils",
+            "publisher": "Ubuntu Core Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.88dsf-41ubuntu6.3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "tar",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.27.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "tasksel",
+            "publisher": "Ubuntu Installer Team \u003cubuntu-installer@lists.ubuntu.com\u003e",
+            "version": "2.88ubuntu15",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "tasksel-data",
+            "publisher": "Ubuntu Installer Team \u003cubuntu-installer@lists.ubuntu.com\u003e",
+            "version": "2.88ubuntu15",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "tcpdump",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.5.1-2ubuntu1.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "telnet",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.17-36build2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "time",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.7-24",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "tzdata",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2016f-0ubuntu0.14.04",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ubuntu-keyring",
+            "publisher": "Michael Vogt \u003cmichael.vogt@canonical.com\u003e",
+            "version": "2012.05.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ubuntu-minimal",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.325",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ubuntu-release-upgrader-core",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:0.220.8",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ubuntu-standard",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.325",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ucf",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.0027+nmu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "udev",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "204-5ubuntu20.19",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ufw",
+            "publisher": "Jamie Strandboge \u003cjamie@ubuntu.com\u003e",
+            "version": "0.34~rc-0ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ufw-site",
+            "publisher": "R1Soft Development  \u003cDevelopment@r1soft.com\u003e",
+            "version": "1.1.0-12",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "update-manager-core",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:0.196.14",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "upstart",
+            "publisher": "James Hunt \u003cjames.hunt@ubuntu.com\u003e",
+            "version": "1.12.1-0ubuntu4.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "ureadahead",
+            "publisher": "Scott James Remnant \u003cscott@ubuntu.com\u003e",
+            "version": "0.100.0-16",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "usbutils",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:007-2ubuntu1.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "util-linux",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "uuid-runtime",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.20.1-5.1ubuntu20.7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "vim-common",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:7.4.052-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "vim-tiny",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2:7.4.052-1ubuntu3",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "virtualbox",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.3.36-dfsg-1+deb8u1ubuntu1.14.04.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "virtualbox-dkms",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "4.3.34-dfsg-1+deb8u1ubuntu1.14.04.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "wamerican",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "7.1-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "watchdog",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "5.13-1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "watershed",
+            "publisher": "Scott James Remnant \u003cscott@ubuntu.com\u003e",
+            "version": "7",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "webmin",
+            "publisher": "Jamie Cameron \u003cjcameron@webmin.com\u003e",
+            "version": "1.720",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "wget",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1.15-1ubuntu1.14.04.2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "whiptail",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.52.15-2ubuntu5",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "wireless-regdb",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2013.02.13-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "wpasupplicant",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "2.1-0ubuntu1.4",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "x11-common",
+            "publisher": "Ubuntu X-SWAT \u003cubuntu-x@lists.ubuntu.com\u003e",
+            "version": "1:7.7+1ubuntu8.1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "xauth",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.0.7-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "xfsprogs",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "3.1.9ubuntu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "xkb-data",
+            "publisher": "Ubuntu X-SWAT \u003cubuntu-x@lists.ubuntu.com\u003e",
+            "version": "2.10.1-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "xml-core",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "0.13+nmu2",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        },
+        {
+            "name": "zlib1g",
+            "publisher": "Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e",
+            "version": "1:1.2.8.dfsg-1ubuntu1",
+            "installDate": "0001-01-01T00:00:00Z",
+            "lastAccessDateTime": "0001-01-01T00:00:00Z"
+        }
+    ],
+    "monitors": [
+        {
+            "name": "GF119 [NVS 310]",
+            "manufacturer": "NVIDIA Corporation"
+        }
+    ],
+    "physicalDrives": [
+        {
+            "type": "Optical Disc Drive",
+            "partitionData": [
+                {
+                    "name": "sr0",
+                    "description": "HL-DT-ST HL-DT-ST_DVD+_-RW_GTA0N",
+                    "sizeBytes": 1073741312
+                }
+            ]
+        }
+    ],
+    "users": [
+        {
+            "userid": "1000",
+            "username": "continuum",
+            "userDisabled": false,
+            "userLockout": false,
+            "passwordRequired": false,
+            "passwordChangeable": false,
+            "passwordExpires": false,
+            "passwordComplexityEnabled": false,
+            "remoteDesktopAllowed": false,
+            "lockoutThreshold": 0,
+            "lockoutDurationMins": 0,
+            "lastLogonTimestamp": 0,
+            "remoteAccessAllowed": false
+        },
+        {
+            "userid": "0",
+            "username": "root",
+            "userDisabled": false,
+            "userLockout": false,
+            "passwordRequired": false,
+            "passwordChangeable": false,
+            "passwordExpires": false,
+            "passwordComplexityEnabled": false,
+            "remoteDesktopAllowed": false,
+            "lockoutThreshold": 0,
+            "lockoutDurationMins": 0,
+            "lastLogonTimestamp": 0,
+            "remoteAccessAllowed": false
+        }
+    ],
+    "services": [
+        {
+            "serviceName": "ITSPlatform",
+            "displayName": "ITSPlatform",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "bootmisc.sh",
+            "displayName": "bootmisc.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "checkfs.sh",
+            "displayName": "checkfs.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "checkroot-bootclean.sh",
+            "displayName": "checkroot-bootclean.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "checkroot.sh",
+            "displayName": "checkroot.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "console",
+            "displayName": "console",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "console-font",
+            "displayName": "console-font",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "console-setup",
+            "displayName": "console-setup",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "container-detect",
+            "displayName": "container-detect",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "control-alt-delete",
+            "displayName": "control-alt-delete",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "cron",
+            "displayName": "cron",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "cryptdisks",
+            "displayName": "cryptdisks",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "cryptdisks-udev",
+            "displayName": "cryptdisks-udev",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "dbus",
+            "displayName": "dbus",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "dmesg",
+            "displayName": "dmesg",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "docstore",
+            "displayName": "docstore",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "failsafe",
+            "displayName": "failsafe",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "flush-early-job-log",
+            "displayName": "flush-early-job-log",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "friendly-recovery",
+            "displayName": "friendly-recovery",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "hostname",
+            "displayName": "hostname",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "hwclock",
+            "displayName": "hwclock",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "hwclock-save",
+            "displayName": "hwclock-save",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "irqbalance",
+            "displayName": "irqbalance",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "iscsi-network-interface",
+            "displayName": "iscsi-network-interface",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "kmod",
+            "displayName": "kmod",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountall",
+            "displayName": "mountall",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountall-bootclean.sh",
+            "displayName": "mountall-bootclean.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountall-net",
+            "displayName": "mountall-net",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountall-reboot",
+            "displayName": "mountall-reboot",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountall-shell",
+            "displayName": "mountall-shell",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountall.sh",
+            "displayName": "mountall.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountdevsubfs.sh",
+            "displayName": "mountdevsubfs.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mounted-debugfs",
+            "displayName": "mounted-debugfs",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mounted-dev",
+            "displayName": "mounted-dev",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mounted-proc",
+            "displayName": "mounted-proc",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mounted-run",
+            "displayName": "mounted-run",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mounted-tmp",
+            "displayName": "mounted-tmp",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mounted-var",
+            "displayName": "mounted-var",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountkernfs.sh",
+            "displayName": "mountkernfs.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountnfs-bootclean.sh",
+            "displayName": "mountnfs-bootclean.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mountnfs.sh",
+            "displayName": "mountnfs.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "mtab.sh",
+            "displayName": "mtab.sh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "network-interface (eth0)",
+            "displayName": "network-interface (eth0)",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "network-interface (lo)",
+            "displayName": "network-interface (lo)",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "network-interface-container",
+            "displayName": "network-interface-container",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "network-interface-security (network-interface/eth0)",
+            "displayName": "network-interface-security (network-interface/eth0)",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "network-interface-security (network-interface/lo)",
+            "displayName": "network-interface-security (network-interface/lo)",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "network-interface-security (networking)",
+            "displayName": "network-interface-security (networking)",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "networking",
+            "displayName": "networking",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "passwd",
+            "displayName": "passwd",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth",
+            "displayName": "plymouth",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth-log",
+            "displayName": "plymouth-log",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth-ready",
+            "displayName": "plymouth-ready",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth-shutdown",
+            "displayName": "plymouth-shutdown",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth-splash",
+            "displayName": "plymouth-splash",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth-stop",
+            "displayName": "plymouth-stop",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "plymouth-upstart-bridge",
+            "displayName": "plymouth-upstart-bridge",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "procps",
+            "displayName": "procps",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "r1aus",
+            "displayName": "r1aus",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "r1ctl",
+            "displayName": "r1ctl",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "rc",
+            "displayName": "rc",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "rc-sysinit",
+            "displayName": "rc-sysinit",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "rcS",
+            "displayName": "rcS",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "resolvconf",
+            "displayName": "resolvconf",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "rsyslog",
+            "displayName": "rsyslog",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "setvtrgb",
+            "displayName": "setvtrgb",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "shutdown",
+            "displayName": "shutdown",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "ssh",
+            "displayName": "ssh",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "startpar-bridge",
+            "displayName": "startpar-bridge",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "systemd-logind",
+            "displayName": "systemd-logind",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "tty1",
+            "displayName": "tty1",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "tty2",
+            "displayName": "tty2",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "tty3",
+            "displayName": "tty3",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "tty4",
+            "displayName": "tty4",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "tty5",
+            "displayName": "tty5",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "tty6",
+            "displayName": "tty6",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "udev",
+            "displayName": "udev",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "udev-fallback-graphics",
+            "displayName": "udev-fallback-graphics",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "udev-finish",
+            "displayName": "udev-finish",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "udevmonitor",
+            "displayName": "udevmonitor",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "udevtrigger",
+            "displayName": "udevtrigger",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "ufw",
+            "displayName": "ufw",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "upstart-file-bridge",
+            "displayName": "upstart-file-bridge",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "upstart-socket-bridge",
+            "displayName": "upstart-socket-bridge",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "upstart-udev-bridge",
+            "displayName": "upstart-udev-bridge",
+            "serviceStatus": "running",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "ureadahead",
+            "displayName": "ureadahead",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "ureadahead-other",
+            "displayName": "ureadahead-other",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        },
+        {
+            "serviceName": "wait-for-state",
+            "displayName": "wait-for-state",
+            "serviceStatus": "stopped",
+            "stopEnableAction": false,
+            "delayedAutoStart": false,
+            "win32ExitCode": 0,
+            "serviceSpecificExitCode": 0
+        }
+    ],
+    "power": {}
+}
