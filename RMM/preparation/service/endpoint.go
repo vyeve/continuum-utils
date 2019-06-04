@@ -25,3 +25,37 @@ func GetAsset(w http.ResponseWriter, r *http.Request) {
 	}
 	RenderJSON(w, asset)
 }
+
+// GetAssetsByPartner returns assets from postgres DB
+func GetAssetsByPartner(w http.ResponseWriter, r *http.Request) {
+	partnerID := GetPartnerID(r)
+	if partnerID == "" {
+		http.Error(w, "not correct data", http.StatusBadRequest)
+		return
+	}
+	assets, err := postgres.Client.GetByPartner(partnerID)
+	if err != nil {
+		if err == postgres.ErrNotFound {
+			SendError(w, http.StatusNotFound, err.Error())
+			return
+		}
+		SendInternalServerError(w, err.Error())
+		return
+	}
+	RenderJSON(w, assets)
+}
+
+// GetAllAssets returns all assets from postgres DB
+// Don't use !!!
+func GetAllAssets(w http.ResponseWriter, r *http.Request) {
+	assets, err := postgres.Client.GetAll()
+	if err != nil {
+		if err == postgres.ErrNotFound {
+			SendError(w, http.StatusNotFound, err.Error())
+			return
+		}
+		SendInternalServerError(w, err.Error())
+		return
+	}
+	RenderJSON(w, assets)
+}

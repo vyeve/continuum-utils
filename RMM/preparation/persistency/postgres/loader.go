@@ -14,6 +14,8 @@ var Client DataBase
 type DataBase interface {
 	writer.Writer
 	GetAsset(partnerID, endpointID string) (asset *models.AssetCollection, err error)
+	GetByPartner(partnerID string) (assets []models.AssetCollection, err error)
+	GetAll() (assets []models.AssetCollection, err error)
 }
 type client struct {
 	pg *sql.DB

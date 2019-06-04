@@ -15,11 +15,38 @@ import (
 	appLoader "github.com/vitaliyyevenko/continuum-utils/RMM/preparation/app-loader"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/generation"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/models"
+	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/persistency/kafka"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/persistency/postgres"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/rest"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/service"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
+
+func main() {
+	config := models.Configuration{
+		SetUpDB:     false,
+		SendToKafka: true,
+		Port:        8841,
+		Environment: rest.QAEnvironment,
+	}
+	// Load clients
+	err := appLoader.Load(config.Environment)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = prepareDB(config)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = sendToKafka(config)
+	if err != nil {
+		log.Fatal(err)
+	}
+	srv := service.New(config.Port)
+	if err = srv.ListenAndServe(); err != nil {
+		log.Fatal(err)
+	}
+}
 
 var env = rest.DTEnvironment
 
@@ -50,25 +77,16 @@ func prepareDB(conf models.Configuration) (err error) {
 	return postgres.Client.WriteAll(endpoints)
 }
 
-func mainZ() {
-	config := models.Configuration{
-		SetUpDB:     true,
-		Port:        8841,
-		Environment: rest.QAEnvironment,
+func sendToKafka(conf models.Configuration) (err error) {
+	if !conf.SendToKafka {
+		return
 	}
-	// Load clients
-	err := appLoader.Load(config.Environment)
+	assets, err := postgres.Client.GetAll()
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
-	err = prepareDB(config)
-	if err != nil {
-		log.Fatal(err)
-	}
-	srv := service.New(config.Port)
-	if err = srv.ListenAndServe(); err != nil {
-		log.Fatal(err)
-	}
+	kafka.Client.PublishAll(assets)
+	return nil
 }
 
 func main2() {
@@ -111,26 +129,34 @@ const (
 	qaFile = "./endpointsQA.txt"
 )
 
-func main() {
+func main3() {
 	fmt.Println("Lets go...")
 	err := appLoader.Load(env)
 	if err != nil {
 		log.Fatal(err)
 	}
-	assets, err := readFile(dtFile)
+	assets, err := readFile(qaFile)
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("Assets:", len(assets))
 	for _, as := range assets {
-		// if as.BaseBoard.HardwareUUID != "" {
-		// 	fmt.Printf("Endpoint: %s; BB:%+v\n", as.EndpointID, as.BaseBoard)
+		// if as.Power.PowerType != "" {
+		// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
 		// }
-		if len(as.Firewall) != 0 {
+		// if !reflect.DeepEqual(as.Power, models.AssetPower{}) {
+		// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
+		// }
+		if len(as.GraphicCards) != 0 {
 			fmt.Printf("Endpoint: %s\n", as.EndpointID)
 		}
-		// for _, m := range as.Networks {
-		// 	if m.IPv4IntfCname != "" {
+		// if as.PartnerID == "50000031" && as.EndpointID == "aca958aa-d6de-4e04-91c5-5e3a0d364d42" {
+		// 	fmt.Printf("Endpoint: %s\t%s\n", as.EndpointID, as.FriendlyName)
+		// 	fmt.Println(as.Os)
+		// }
+
+		// for _, m := range as.Monitors {
+		// 	if m.ConnType != "" {
 		// 		fmt.Printf("Endpoint: %s\n", as.EndpointID)
 		// 		break
 		// 	}

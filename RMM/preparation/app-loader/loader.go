@@ -2,6 +2,7 @@ package apploader
 
 import (
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/generation"
+	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/persistency/kafka"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/persistency/postgres"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/rest"
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
@@ -16,6 +17,7 @@ var clients = []func() error{
 	generation.Load,
 	writer.Load,
 	postgres.Load,
+	kafka.Load,
 }
 
 // Load initializes clients

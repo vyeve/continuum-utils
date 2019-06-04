@@ -20,6 +20,7 @@ func New(port int) *http.Server {
 	router := mux.NewRouter().PathPrefix("/asset/v1").Subrouter()
 	{
 		router.HandleFunc("/partner/{partnerID}/endpoints/{endpointID}", GetAsset).Methods(http.MethodGet)
+		router.HandleFunc("/partner/{partnerID}", GetAssetsByPartner).Methods(http.MethodGet)
 	}
 
 	middlewareManager.Use(negroniLogger)
