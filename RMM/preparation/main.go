@@ -38,10 +38,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = sendToKafka(config)
-	if err != nil {
-		log.Fatal(err)
-	}
+	go func() {
+		err = sendToKafka(config)
+		if err != nil {
+			log.Fatal(err)
+		}
+	}()
+
 	srv := service.New(config.Port)
 	if err = srv.ListenAndServe(); err != nil {
 		log.Fatal(err)
