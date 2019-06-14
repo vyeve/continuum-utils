@@ -20,7 +20,8 @@ var Client Publisher
 
 const (
 	broker = "localhost:9092"
-	topic  = "managed-endpoint-change"
+	// broker = "172.28.48.249:9092"
+	topic = "managed-endpoint-change"
 )
 
 // Load initializes kafka client
@@ -57,7 +58,7 @@ func (c client) Publish(asset models.AssetCollection) {
 
 func (c client) PublishAll(assets []models.AssetCollection) {
 	for _, asset := range assets {
-		if asset.PartnerID != "50000031" {
+		if asset.PartnerID != "50016369" {
 			continue
 		}
 		// if asset.EndpointID != "aca958aa-d6de-4e04-91c5-5e3a0d364d42" {
@@ -67,9 +68,11 @@ func (c client) PublishAll(assets []models.AssetCollection) {
 		// 	asset.EndpointID != "fa012879-c01e-4c18-9ac4-50ac215cd03c" {
 		// 	continue
 		// }
+		for _, u := range asset.Users {
+			fmt.Println(u.LastLogonTimestamp)
+		}
 
-		fmt.Println(asset.EndpointID)
-		c.Publish(asset)
+		// c.Publish(asset)
 	}
 }
 

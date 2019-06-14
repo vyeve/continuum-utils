@@ -21,6 +21,9 @@ func New(port int) *http.Server {
 	{
 		router.HandleFunc("/partner/{partnerID}/endpoints/{endpointID}", GetAsset).Methods(http.MethodGet)
 		router.HandleFunc("/partner/{partnerID}", GetAssetsByPartner).Methods(http.MethodGet)
+		router.HandleFunc("/partner/0/partners", GetPartners).Methods(http.MethodGet)
+		router.HandleFunc("/partners/{partnerID}/sites", GetSites).Methods(http.MethodGet)
+		router.HandleFunc("/partner/{partnerID}/sites/{siteID}/summary", GetAssetsByPartnerAndSite).Methods(http.MethodGet)
 	}
 
 	middlewareManager.Use(negroniLogger)

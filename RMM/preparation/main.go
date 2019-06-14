@@ -22,10 +22,10 @@ import (
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
 
-func main() {
+func main3() {
 	config := models.Configuration{
 		SetUpDB:     false,
-		SendToKafka: true,
+		SendToKafka: false,
 		Port:        8841,
 		Environment: rest.QAEnvironment,
 	}
@@ -132,13 +132,13 @@ const (
 	qaFile = "./endpointsQA.txt"
 )
 
-func main3() {
+func main() {
 	fmt.Println("Lets go...")
 	err := appLoader.Load(env)
 	if err != nil {
 		log.Fatal(err)
 	}
-	assets, err := readFile(qaFile)
+	assets, err := readFile(dtFile)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -150,9 +150,12 @@ func main3() {
 		// if !reflect.DeepEqual(as.Power, models.AssetPower{}) {
 		// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
 		// }
-		if len(as.GraphicCards) != 0 {
-			fmt.Printf("Endpoint: %s\n", as.EndpointID)
+		for _, d := range as.Drives {
+			if d.SizeBytes != 0 {
+				fmt.Printf("Partner: %s\tSize: %d\n", as.PartnerID, d.SizeBytes)
+			}
 		}
+
 		// if as.PartnerID == "50000031" && as.EndpointID == "aca958aa-d6de-4e04-91c5-5e3a0d364d42" {
 		// 	fmt.Printf("Endpoint: %s\t%s\n", as.EndpointID, as.FriendlyName)
 		// 	fmt.Println(as.Os)
