@@ -22,7 +22,7 @@ import (
 	"github.com/vitaliyyevenko/continuum-utils/RMM/preparation/writer"
 )
 
-func main3() {
+func main() {
 	config := models.Configuration{
 		SetUpDB:     false,
 		SendToKafka: false,
@@ -51,7 +51,7 @@ func main3() {
 	}
 }
 
-var env = rest.DTEnvironment
+var env = rest.QAEnvironment
 
 func prepareDB(conf models.Configuration) (err error) {
 	if !conf.SetUpDB {
@@ -104,13 +104,13 @@ func main2() {
 		log.Fatal(err)
 	}
 	fmt.Println("Length Products:", len(ids))
-	partners, err := generation.Client.GetPartnerIDs(ids[:20])
+	partners, err := generation.Client.GetPartnerIDs(ids)
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("Length Partners:", len(partners))
-
-	endpoints, err := generation.Client.GetEndpoints(partners[:20])
+	partners = []string{"50000031"}
+	endpoints, err := generation.Client.GetEndpoints(partners)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -119,59 +119,60 @@ func main2() {
 	if err != nil {
 		log.Println(err)
 	}
-	for _, en := range endpoints {
-		err = postgres.Client.Write(en)
-		if err != nil {
-			log.Println(err)
-		}
-	}
+	// for _, en := range endpoints {
+	// 	err = postgres.Client.Write(en)
+	// 	if err != nil {
+	// 		log.Println(err)
+	// 	}
+	// }
 }
 
 const (
-	dtFile = "./endpointsDT.txt"
-	qaFile = "./endpointsQA.txt"
+	dtFile  = "./endpointsDT.txt"
+	qaFile  = "./endpointsQA.txt"
+	genFile = "./endpoints.txt"
 )
 
-func main() {
+func main6() {
 	fmt.Println("Lets go...")
 	err := appLoader.Load(env)
 	if err != nil {
 		log.Fatal(err)
 	}
-	assets, err := readFile(dtFile)
+	assets, err := readFile(genFile)
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("Assets:", len(assets))
-	for _, as := range assets {
-		// if as.Power.PowerType != "" {
-		// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
-		// }
-		// if !reflect.DeepEqual(as.Power, models.AssetPower{}) {
-		// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
-		// }
-		for _, d := range as.Drives {
-			if d.SizeBytes != 0 {
-				fmt.Printf("Partner: %s\tSize: %d\n", as.PartnerID, d.SizeBytes)
-			}
-		}
-
-		// if as.PartnerID == "50000031" && as.EndpointID == "aca958aa-d6de-4e04-91c5-5e3a0d364d42" {
-		// 	fmt.Printf("Endpoint: %s\t%s\n", as.EndpointID, as.FriendlyName)
-		// 	fmt.Println(as.Os)
-		// }
-
-		// for _, m := range as.Monitors {
-		// 	if m.ConnType != "" {
-		// 		fmt.Printf("Endpoint: %s\n", as.EndpointID)
-		// 		break
-		// 	}
-		// }
-	}
-	// err = postgres.Client.WriteAll(assets)
-	// if err != nil {
-	// 	log.Fatal(err)
+	// for _, as := range assets {
+	// if as.Power.PowerType != "" {
+	// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
 	// }
+	// if !reflect.DeepEqual(as.Power, models.AssetPower{}) {
+	// 	fmt.Printf("Endpoint: %s BB\t%v\n", as.EndpointID, as.Power)
+	// }
+	// for _, d := range as.Drives {
+	// 	if d.SizeBytes != 0 {
+	// 		fmt.Printf("Partner: %s\tSize: %d\n", as.PartnerID, d.SizeBytes)
+	// 	}
+	// }
+
+	// if as.PartnerID == "50000031" && as.EndpointID == "aca958aa-d6de-4e04-91c5-5e3a0d364d42" {
+	// 	fmt.Printf("Endpoint: %s\t%s\n", as.EndpointID, as.FriendlyName)
+	// 	fmt.Println(as.Os)
+	// }
+
+	// for _, m := range as.Monitors {
+	// 	if m.ConnType != "" {
+	// 		fmt.Printf("Endpoint: %s\n", as.EndpointID)
+	// 		break
+	// 	}
+	// }
+	// }
+	err = postgres.Client.WriteAll(assets)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func readFile(fileName string) (assets []models.AssetCollection, err error) {
